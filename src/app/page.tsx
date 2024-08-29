@@ -1,18 +1,17 @@
 import Navbar from './navbar'
-import InformacionCentro from './informacion-centro'
-import ProcesoAdmision from "./proceso-admision"
-import HeroSection from './hero-section'
-import InformacionPrueba from './informacion-prueba'
-import BeneficiosEstudiantes from './beneficios-estudiantes'
-import NuestrosCursos from './nuestros-cursos'
+import InformacionCentro from '../components/home/informacion-centro'
+import ProcesoAdmision from "../components/home/proceso-admision"
+import HeroSection from '../components/home/hero-section'
+import InformacionPrueba from '../components/home/informacion-prueba'
+import BeneficiosEstudiantes from '../components/home/beneficios-estudiantes'
+import NuestrosCursos from '../components/home/nuestros-cursos'
 import Footer from "./footer"
-
 
 export default function LandingPage() {
   return (
     <div className="min-h-screen bg-gray-50 flex flex-col">
       <Navbar />
-      <main className="flex-grow">
+      <main className="flex-grow w-full">
       <HeroSection />
       <InformacionCentro />
       <InformacionPrueba />

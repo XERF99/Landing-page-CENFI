@@ -40,7 +40,7 @@ export default function HeroSection() {
 import React from 'react';
 import Image from 'next/image';
 import { motion } from 'framer-motion';
-import { Button } from "../components/ui/button";
+import { Button } from "../../components/ui/button";
 import { CheckCircle } from 'lucide-react';
 
 const HeroSection: React.FC = () => {
@@ -50,7 +50,7 @@ const HeroSection: React.FC = () => {
   };
 
   return (
-    <section className="h-[50vh] bg-gradient-to-br from-blue-50 to-indigo-100 flex items-center">
+    <section className="h-[50vh] bg-gradient-to-br from-blue-50 to-indigo-100 flex items-center mt-2">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
         <div className="grid md:grid-cols-2 gap-8 items-center">
           <motion.div
