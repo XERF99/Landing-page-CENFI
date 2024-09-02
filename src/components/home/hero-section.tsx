@@ -75,7 +75,7 @@ const HeroSection: React.FC = () => {
             className="relative hidden md:block"
           >
             <Image
-              src="/estudiantes.png"
+              src="/portada.jpg"
               alt="Estudiante estudiando"
               width={700}
               height={600}

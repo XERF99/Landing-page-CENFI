@@ -80,6 +80,7 @@ import { Menu, X } from 'lucide-react';
 const navItems = [
   { name: 'Inicio', href: '/' },
   { name: 'Contacto', href: '/contact' },
+  { name: 'Sobre nosotros', href: '/about' },
   { name: 'Simuladores', href: '#' },
 ];
 
@@ -91,10 +92,15 @@ const Navbar: React.FC = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between h-16">
           <div className="flex-shrink-0 flex items-center">
-          <Link href="/" passHref>
-            <Image src="/Logo.png" alt="CENFI Logo" width={100} height={100} />
-          </Link>
-            <span className="ml-2 text-xl font-bold text-blue-900">Preuniversitario CENFI</span>
+            <Link href="/" passHref>
+              <Image src="/Logo.png" alt="CENFI Logo" width={100} height={100} />
+            </Link>
+            <span className="hidden sm:inline ml-2 text-l font-bold text-blue-900">
+              CENTRO DE FORMACIÓN INTENSIVA CIA. LTDA.
+            </span>
+            <span className="sm:hidden ml-2 text-l font-bold text-blue-900">
+              CENFI CIA. LTDA.
+            </span>
           </div>
           <div className="hidden md:flex items-center space-x-4">
             {navItems.map((item) => (

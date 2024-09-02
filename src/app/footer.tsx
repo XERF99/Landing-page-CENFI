@@ -12,7 +12,7 @@ export default function Footer() {
           <div className="space-y-4">
             <h3 className="text-2xl font-bold text-blue-600">CENFI</h3>
             <p className="text-sm text-gray-600">
-              Preparándote para el éxito universitario desde 2010.
+              Preparándote para el éxito universitario desde 2012.
             </p>
             <div className="flex space-x-4">
               {[
@@ -35,7 +35,7 @@ export default function Footer() {
           <div>
             <h4 className="text-lg font-semibold mb-4 text-gray-800">Enlaces Rápidos</h4>
             <ul className="space-y-2">
-              {['Inicio','Contacto'].map((item) => (
+              {['Inicio','Contacto','Sobre nosotros', 'Simuladores'].map((item) => (
                 <li key={item}>
                   <Link href={`#${item.toLowerCase()}`} className="text-sm text-gray-600 hover:text-blue-500 transition-colors">
                     {item}

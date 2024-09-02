@@ -1,14 +1,14 @@
 "use client"
-import { motion } from 'framer-motion'
+/*import { motion } from 'framer-motion'
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "../../components/ui/card"
 import { Badge } from "../../components/ui/badge"
 import { Clock } from 'lucide-react'
 
 const cursos = [
-  { icon: Clock, title: "Curso de Preparación", duration: "5 meses", description: "Preparación para el ingreso a la Universidad Nacional de Loja" },
-  { icon: Clock, title: "Curso de Preparación", duration: "5 meses", description: "Preparación para el ingreso a la Universidad Técnica Particular de Loja" },
-  { icon: Clock, title: "Curso de Preparación", duration: "5 meses", description: "Preparación para ingresar a la Universidad EPN - Quito" },
-  { icon: Clock, title: "Curso de Preparación", duration: "5 meses", description: "Preparación para ingresar a la Universidad Central - Quito" },
+  { icon: Clock, title: "Curso universidades públicas", description: "Curso de preparación para la prueba de admisión de la UNL, UCE, EPN, UNACH, U Cuenca, UTMACH entre otras para cada periodo académico." },
+  { icon: Clock, title: "Curso de universidad privadas", description: "Cursos de preparación para la prueba de admisión UTPL, USFQ, PUCE, entre otras para cada periodo académico" },
+  { icon: Clock, title: "Cursos vacacionales", description: "Cursos de refuerzo académico en áreas como matemáticas, físicas, química, biología y ciencias sociales." },
+  { icon: Clock, title: "Talleres estratégicos", description: "Cursos para desarrollo de pruebas tipo de universidades públicas y privadas" },
 ]
 
 export default function NuestrosCursos() {
@@ -37,10 +37,7 @@ export default function NuestrosCursos() {
                   <div>
                     <CardTitle className="text-xl font-bold">{curso.title}</CardTitle>
                     <CardDescription>
-                      <Badge variant="secondary" className="mt-1">
-                        <curso.icon className="w-3 h-3 mr-1" />
-                        {curso.duration}
-                      </Badge>
+                      
                     </CardDescription>
                   </div>
                 </CardHeader>
@@ -55,3 +52,58 @@ export default function NuestrosCursos() {
     </section>
   )
 }
+*/
+
+import React from 'react';
+import { Card, CardHeader, CardTitle, CardContent } from "../../components/ui/card";
+import { GraduationCap, BookOpen, Clock, Lightbulb } from 'lucide-react';
+
+const cursos = [
+  {
+    title: "Curso universidades públicas",
+    description: "Curso de preparación para la prueba de admisión de la UNL, UCE, EPN, UNACH, U Cuenca, UTMACH entre otras para cada período académico.",
+    icon: GraduationCap
+  },
+  {
+    title: "Curso de universidad privadas",
+    description: "Cursos de preparación para la prueba de admisión UTPL, USFQ, PUCE, entre otras para cada período académico",
+    icon: BookOpen
+  },
+  {
+    title: "Cursos vacacionales",
+    description: "Cursos de refuerzo académico en áreas como matemáticas, físicas, química, biología y ciencias sociales.",
+    icon: Clock
+  },
+  {
+    title: "Talleres estratégicos",
+    description: "Cursos para desarrollo de pruebas tipo de universidades públicas y privadas",
+    icon: Lightbulb
+  }
+];
+
+const NuestrosCursos = () => {
+  return (
+    <section className="py-16 bg-gradient-to-b from-blue-50 to-white">
+      <div className="container mx-auto px-4">
+        <h2 className="text-4xl font-bold text-blue-800 mb-12 text-center">Nuestros Cursos</h2>
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+          {cursos.map((curso, index) => (
+            <Card key={index} className="group hover:shadow-lg transition-shadow duration-300">
+              <CardHeader className="text-center">
+                <div className="mx-auto bg-blue-100 rounded-full p-3 mb-4 group-hover:bg-blue-200 transition-colors duration-300">
+                  <curso.icon className="w-8 h-8 text-blue-600" />
+                </div>
+                <CardTitle className="text-xl font-semibold text-blue-700 group-hover:text-blue-800 transition-colors duration-300">{curso.title}</CardTitle>
+              </CardHeader>
+              <CardContent>
+                <p className="text-gray-600 text-center">{curso.description}</p>
+              </CardContent>
+            </Card>
+          ))}
+        </div>
+      </div>
+    </section>
+  );
+};
+
+export default NuestrosCursos;
