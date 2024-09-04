@@ -7,7 +7,7 @@ import React, { useState, useEffect } from 'react';
 
 export default function Contact() {
   return (
-    <div className="min-h-screen bg-blue-50 flex flex-col">
+    <div className="min-h-screen bg-gradient-to-br from-blue-50 to-white dark:from-gray-800 dark:to-gray-900 flex flex-col">
       <Navbar />
       <main className="flex-grow">
       <NuestraHistoria />
