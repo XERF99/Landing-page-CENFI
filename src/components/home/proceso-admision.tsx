@@ -23,7 +23,14 @@ export default function ProcesoAdmision() {
   return (
     <section className="py-16 bg-gradient-to-b from-blue-50 to-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <h2 className="text-3xl font-bold text-center mb-12 text-blue-800">Proceso de Admisión</h2>
+      <motion.h2
+          className="text-3xl font-bold text-center mb-12 text-blue-800"
+          initial={{ opacity: 0, y: -20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.5 }}
+        >
+        Proceso de Admisión
+        </motion.h2>
         <div className="relative">
           <div className="relative flex justify-between items-center mb-12">
             {admissionSteps.map((step, index) => (

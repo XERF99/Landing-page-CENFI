@@ -57,6 +57,8 @@ export default function NuestrosCursos() {
 import React from 'react';
 import { Card, CardHeader, CardTitle, CardContent } from "../../components/ui/card";
 import { GraduationCap, BookOpen, Clock, Lightbulb } from 'lucide-react';
+import { motion } from 'framer-motion'
+import { useState } from 'react'
 
 const cursos = [
   {
@@ -82,13 +84,30 @@ const cursos = [
 ];
 
 const NuestrosCursos = () => {
+  const [hoveredIndex, setHoveredIndex] = useState<number | null>(null)
+
   return (
     <section className="py-16 bg-gradient-to-b from-blue-50 to-white">
       <div className="container mx-auto px-4">
-        <h2 className="text-4xl font-bold text-blue-800 mb-12 text-center">Nuestros Cursos</h2>
+      <motion.h2
+          className="text-4xl font-bold text-blue-800 mb-12 text-center"
+          initial={{ opacity: 0, y: -20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.5 }}
+        >
+        Nuestros Cursos
+        </motion.h2>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
           {cursos.map((curso, index) => (
-            <Card key={index} className="group hover:shadow-lg transition-shadow duration-300">
+            <motion.div
+            key={index}
+            initial={{ opacity: 0, y: 50 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.5, delay: index * 0.1 }}
+            onHoverStart={() => setHoveredIndex(index)}
+            onHoverEnd={() => setHoveredIndex(null)}
+          >
+            <Card key={index} className="group hover:shadow-lg transition-shadow duration-300 min-h-[310px]">
               <CardHeader className="text-center">
                 <div className="mx-auto bg-blue-100 rounded-full p-3 mb-4 group-hover:bg-blue-200 transition-colors duration-300">
                   <curso.icon className="w-8 h-8 text-blue-600" />
@@ -99,6 +118,7 @@ const NuestrosCursos = () => {
                 <p className="text-gray-600 text-center">{curso.description}</p>
               </CardContent>
             </Card>
+            </motion.div>
           ))}
         </div>
       </div>

@@ -35,7 +35,14 @@ export default function InformacionPrueba() {
   return (
     <section className="py-16 bg-gradient-to-b from-blue-50 to-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col">
-        <h2 className="text-3xl font-bold text-center mb-12 text-blue-800">Información de la Prueba</h2>
+      <motion.h2
+          className="text-3xl font-bold text-center mb-12 text-blue-800"
+          initial={{ opacity: 0, y: -20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.5 }}
+        >
+        Información de la Prueba
+        </motion.h2>
         <Tabs defaultValue="estructura" onValueChange={setSelectedTab} className="w-full">
           <TabsList className="grid w-full grid-cols-1 sm:grid-cols-3 gap-2 sm:gap-4 mb-28 sm:mb-8">
             {tabContent.map((tab) => (

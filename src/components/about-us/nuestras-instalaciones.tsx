@@ -35,7 +35,14 @@ const NuestrasInstalaciones = () => {
     return (
         <section className="bg-gradient-to-b from-blue-50 to-white py-16">
             <div className="container mx-auto px-4">
-                <h2 className="text-4xl font-bold text-blue-800 mb-8 text-right">Nuestras Instalaciones</h2>
+                <motion.h2
+                    className="text-4xl font-bold text-blue-800 mb-8 text-right"
+                    initial={{ opacity: 0, y: -20 }}
+                    animate={{ opacity: 1, y: 0 }}
+                    transition={{ duration: 0.5 }}
+                >
+                    Nuestras Instalaciones
+                </motion.h2>
                 <div className="flex flex-col md:flex-row gap-8">
                     <Card className="w-full md:w-1/2">
                         <CardContent className="p-4">
@@ -75,7 +82,7 @@ const NuestrasInstalaciones = () => {
                         </p>
                         <ul className="space-y-4">
                             {features.map((feature, index) => (
-                                <motion.li 
+                                <motion.li
                                     key={index}
                                     className="flex items-center p-2 rounded-lg hover:bg-blue-50 transition-colors duration-300"
                                     initial={{ opacity: 0, y: 20 }}

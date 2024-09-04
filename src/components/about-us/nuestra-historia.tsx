@@ -47,7 +47,14 @@ const NuestraHistoria = () => {
     return (
         <section className="h-auto flex items-start bg-gradient-to-br from-blue-50 to-white pt-10 pb-5 mt-2">
             <div className="container mx-auto px-4">
-                <h1 className="text-4xl font-bold text-center text-blue-800 mb-12">Sobre Nosotros</h1>
+                <motion.h1
+                    className="text-4xl font-bold text-center mb-8 text-blue-900"
+                    initial={{ opacity: 0, y: -20 }}
+                    animate={{ opacity: 1, y: 0 }}
+                    transition={{ duration: 0.5 }}
+                >
+                    Sobre Nosotros
+                </motion.h1>
                 <div className="flex flex-col md:flex-row">
                     <div className="w-full md:w-1/2 pr-0 md:pr-8 mb-8 md:mb-0">
                         <motion.h2
@@ -278,4 +285,4 @@ export default NuestraHistoria;*/
                                     </div>
                                 }
                             />
-*/ 
+*/
