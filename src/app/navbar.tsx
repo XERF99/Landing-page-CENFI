@@ -95,10 +95,10 @@ const Navbar: React.FC = () => {
             <Link href="/" passHref>
               <Image src="/Logo.png" alt="CENFI Logo" width={100} height={100} />
             </Link>
-            <span className="hidden sm:inline ml-2 text-l font-bold text-blue-900">
+            <span className="hidden lg:inline ml-2 text-l font-bold text-blue-900">
               CENTRO DE FORMACIÓN INTENSIVA CIA. LTDA.
             </span>
-            <span className="sm:hidden ml-2 text-l font-bold text-blue-900">
+            <span className="lg:hidden ml-2 text-l font-bold text-blue-900">
               CENFI CIA. LTDA.
             </span>
           </div>

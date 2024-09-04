@@ -74,9 +74,9 @@ const NuestraHistoria = () => {
                             <ElegantContentSection />
                         </motion.div>
                     </div>
-                    <div className="w-full md:w-1/2">
+                    <div className="w-full md:w-1/2 mt-10">
                         <motion.div
-                            className="sticky top-4 aspect-w-9 aspect-h-16 md:aspect-auto md:h-[calc(40vh-2rem)] mt-12 shadow-blue-900"
+                            className="sticky top-4 aspect-video md:aspect-auto md:h-[calc(40vh-2rem)]"
                             initial={{ opacity: 0, scale: 0.9 }}
                             animate={{ opacity: 1, scale: 1 }}
                             transition={{ delay: 0.4, duration: 0.5 }}
@@ -86,7 +86,8 @@ const NuestraHistoria = () => {
                                 frameBorder="0"
                                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                                 allowFullScreen
-                                className="w-full h-full rounded-lg shadow-2xl"
+
+                                className="w-full h-full rounded-lg shadow-2xl object-contain"
                             ></iframe>
                         </motion.div>
                     </div>

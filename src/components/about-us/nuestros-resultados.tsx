@@ -28,7 +28,7 @@ const NuestrosResultados = () => {
                                 <AnimatedStats />
                             </div>
                             <div className="lg:w-1/2">
-                                <div className="relative h-96 cursor-pointer hidden md:block" onClick={() => setIsModalOpen(true)}>
+                                <div className="relative h-96 cursor-pointer hidden lg:block" onClick={() => setIsModalOpen(true)}>
                                     <Image
                                         src="/images/logros.jpg?height=800&width=600&text=Estudiantes"
                                         alt="Estudiantes exitosos"
