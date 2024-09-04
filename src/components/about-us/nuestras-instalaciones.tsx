@@ -35,7 +35,7 @@ const NuestrasInstalaciones = () => {
     return (
         <section className="bg-gradient-to-b from-blue-50 to-white py-16">
             <div className="container mx-auto px-4">
-                <h2 className="text-4xl font-bold text-blue-800 mb-8 text-center">Nuestras Instalaciones</h2>
+                <h2 className="text-4xl font-bold text-blue-800 mb-8 text-right">Nuestras Instalaciones</h2>
                 <div className="flex flex-col md:flex-row gap-8">
                     <Card className="w-full md:w-1/2">
                         <CardContent className="p-4">

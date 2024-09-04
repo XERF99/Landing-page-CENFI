@@ -13,7 +13,7 @@ const NuestrosResultados = () => {
     return (
         <section className="py-16 bg-white-50">
             <div className="container mx-auto px-4">
-                <h2 className="text-4xl font-bold text-blue-800 mb-12 text-center">Nuestros Resultados</h2>
+                <h2 className="text-4xl font-bold text-blue-800 mb-12 text-left">Nuestros Resultados</h2>
                 <Card>
                     <CardContent className="p-6">
                         <div className="flex flex-col lg:flex-row gap-8 items-center">

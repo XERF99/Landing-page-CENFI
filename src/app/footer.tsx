@@ -12,7 +12,7 @@ export default function Footer() {
           <div className="space-y-4">
             <h3 className="text-2xl font-bold text-blue-600">CENFI</h3>
             <p className="text-sm text-gray-600">
-              Preparándote para el éxito universitario desde 2012.
+              Preparándote para el éxito universitario desde 2018.
             </p>
             <div className="flex space-x-4">
               {[
