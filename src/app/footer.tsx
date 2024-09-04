@@ -37,7 +37,7 @@ export default function Footer() {
             <ul className="space-y-2">
               {['Inicio','Contacto','Sobre nosotros', 'Simuladores'].map((item) => (
                 <li key={item}>
-                  <Link href={`#${item.toLowerCase()}`} className="text-sm text-gray-600 hover:text-blue-500 transition-colors">
+                  <Link href={`/${item.toLowerCase().replace(/ /g, '-')}`} as={`/${item.toLowerCase().replace(/ /g, '-')}`} className="text-sm text-gray-600 hover:text-blue-500 transition-colors">
                     {item}
                   </Link>
                 </li>
