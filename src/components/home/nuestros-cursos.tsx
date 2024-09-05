@@ -164,7 +164,7 @@ const NuestrosCursos = () => {
     <section className={'py-16 bg-gradient-to-b from-blue-50 to-white dark:from-gray-800 dark:to-gray-900'}>
       <div className={'container mx-auto px-4'}>
         <motion.h2
-          className={'text-4xl font-bold text-blue-800 dark:text-white mb-12 text-center'}
+          className={'text-4xl font-bold text-blue-800 dark:text-blue-300 mb-12 text-center'}
           initial={{ opacity: 0, y: -20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5 }}
@@ -184,9 +184,9 @@ const NuestrosCursos = () => {
               <Card className={'group hover:shadow-lg transition-shadow duration-300 min-h-[310px] dark:bg-gray-800'}>
                 <CardHeader className={'text-center'}>
                   <div className={'mx-auto bg-blue-100 rounded-full p-3 mb-4 group-hover:bg-blue-200 transition-colors duration-300 dark:bg-gray-700 dark:group-hover:bg-gray-600'}>
-                    <curso.icon className={'w-8 h-8 text-blue-600 dark:text-blue-400'} />
+                    <curso.icon className={'w-8 h-8 text-blue-600 dark:text-blue-200'} />
                   </div>
-                  <CardTitle className={'text-xl font-semibold text-blue-700 group-hover:text-blue-800 transition-colors duration-300 dark:text-white dark:group-hover:text-gray-300'}>
+                  <CardTitle className={'text-xl font-semibold text-blue-700 group-hover:text-blue-800 transition-colors duration-300 dark:text-blue-300 dark:group-hover:text-gray-300'}>
                     {curso.title}
                   </CardTitle>
                 </CardHeader>

@@ -105,7 +105,7 @@ export default function ProcesoAdmision() {
     <section className={'py-16 bg-gradient-to-b from-blue-50 to-white dark:from-gray-800 dark:to-gray-900'}>
       <div className={'max-w-7xl mx-auto px-4 sm:px-6 lg:px-8'}>
         <motion.h2
-          className={'text-3xl font-bold text-center mb-12 text-blue-800 dark:text-white'}
+          className={'text-3xl font-bold text-center mb-12 text-blue-800 dark:text-blue-300'}
           initial={{ opacity: 0, y: -20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5 }}
@@ -148,7 +148,7 @@ export default function ProcesoAdmision() {
             </CardContent>
           </Card>
           <div className={'flex justify-between mt-8'}>
-            <Button onClick={prevStep} variant={'outline'} className={'flex items-center dark:border-gray-600 dark:text-gray-300'}>
+            <Button onClick={prevStep} variant={'outline'} className={'flex items-center dark:border-gray-600 dark:text-gray-300 dark:bg-gray-600'}>
               <ChevronLeft className={'mr-2 h-4 w-4'} /> Anterior
             </Button>
             <Button onClick={nextStep} className={'flex items-center bg-blue-600 hover:bg-blue-700 text-white dark:bg-blue-500 dark:hover:bg-blue-600'}>

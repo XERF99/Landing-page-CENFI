@@ -95,7 +95,7 @@ export default function Footer() {
       <div className={'max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12'}>
         <div className={'grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8'}>
           <div className={'space-y-4'}>
-            <h3 className={'text-2xl font-bold text-blue-600 dark:text-blue-400'}>CENFI</h3>
+            <h3 className={'text-2xl font-bold text-blue-600 dark:text-blue-500'}>CENFI</h3>
             <p className={'text-sm text-gray-600 dark:text-gray-300'}>
               Preparándote para el éxito universitario desde 2018.
             </p>
@@ -118,7 +118,7 @@ export default function Footer() {
             </div>
           </div>
           <div>
-            <h4 className={'text-lg font-semibold mb-4 text-gray-800 dark:text-gray-200'}>Enlaces Rápidos</h4>
+            <h4 className={'text-lg font-semibold mb-4 text-gray-800 dark:text-blue-300'}>Enlaces Rápidos</h4>
             <ul className={'space-y-2'}>
               {['Inicio','Contacto','Sobre nosotros', 'Simuladores'].map((item) => (
                 <li key={item}>
@@ -130,7 +130,7 @@ export default function Footer() {
             </ul>
           </div>
           <div>
-            <h4 className={'text-lg font-semibold mb-4 text-gray-800 dark:text-gray-200'}>Contacto</h4>
+            <h4 className={'text-lg font-semibold mb-4 text-gray-800 dark:text-blue-300'}>Contacto</h4>
             <ul className={'space-y-2'}>
               <li className={'flex items-center text-sm text-gray-600 dark:text-gray-300'}>
                 <Mail className={'w-4 h-4 mr-2 text-blue-500 dark:text-blue-400'} />
@@ -147,7 +147,7 @@ export default function Footer() {
             </ul>
           </div>
           <div>
-            <h4 className={'text-lg font-semibold mb-4 text-gray-800 dark:text-gray-200'}>Horario de Atención</h4>
+            <h4 className={'text-lg font-semibold mb-4 text-gray-800 dark:text-blue-300'}>Horario de Atención</h4>
             <ul className={'space-y-2 text-sm text-gray-600 dark:text-gray-300'}>
               <li>Lunes a Viernes: 8:00 AM - 6:00 PM</li>
               <li>Sábados: 9:00 AM - 1:00 PM</li>

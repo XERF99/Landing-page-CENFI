@@ -239,7 +239,7 @@ const VisionContent = () => (
     <p className={'leading-relaxed text-justify'}>
       Ser reconocida como una academia de nivelación líder en la región, destacándonos por nuestra excelencia académica, innovación y compromiso con el éxito de nuestros estudiantes. Nuestra visión es:
     </p>
-    <div className={'bg-gradient-to-r from-green-50 to-emerald-50 p-6 rounded-xl shadow-inner dark:bg-gradient-to-r dark:from-green-900 dark:to-emerald-900'}>
+    <div className={'bg-gradient-to-r from-green-50 to-emerald-50 p-6 rounded-xl shadow-inner dark:bg-gradient-to-r dark:from-cyan-900 dark:to-blue-900'}>
       <ul className={'space-y-4'}>
         {[
           "Ser el referente en educación de nivelación, brindando programas y servicios de alta calidad que respondan a las necesidades de nuestros estudiantes.",
