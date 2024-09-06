@@ -92,7 +92,7 @@ export default function Footer() {
 
   return (
     <footer className={'bg-gradient-to-b from-gray-50 to-gray-100 dark:from-gray-800 dark:to-gray-900'}>
-      <div className={'max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12'}>
+      <div className={'max-w-full mx-auto px-4 sm:px-6 lg:px-28 py-12'}> {/*max-w-7xl px-8*/}
         <div className={'grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8'}>
           <div className={'space-y-4'}>
             <h3 className={'text-2xl font-bold text-blue-600 dark:text-blue-500'}>CENFI</h3>

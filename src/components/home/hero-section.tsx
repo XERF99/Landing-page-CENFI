@@ -309,7 +309,7 @@ const HeroSection: React.FC = () => {
   };
 
   return (
-    <section className={'min-h-[50vh] bg-gradient-to-br from-blue-50 to-indigo-100 dark:from-gray-800 dark:to-gray-900 flex items-center mt-2'}>
+    <section className={'lg:min-h-[50vh] md:min-h-[30vh] bg-gradient-to-br from-blue-50 to-indigo-100 dark:from-gray-800 dark:to-gray-900 flex items-center mt-2'}>
       <div className={'max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8'}>
         <div className={'grid md:grid-cols-2 gap-8 items-center'}>
           <motion.div

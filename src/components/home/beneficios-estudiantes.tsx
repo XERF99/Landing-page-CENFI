@@ -83,7 +83,7 @@ const benefits: Benefit[] = [
 const BeneficiosEstudiantes: React.FC = () => {
   return (
     <section className={'py-16 bg-gradient-to-r from-blue-500 to-indigo-600 dark:from-gray-800 dark:to-gray-900'}>
-      <div className={'max-w-7xl mx-auto px-4 sm:px-6 lg:px-8'}>
+      <div className={'max-w-full mx-auto px-4 sm:px-6 lg:px-28'}>
         <motion.h2
           className={'text-3xl font-bold text-center mb-12 text-white dark:text-blue-300'}
           initial={{ opacity: 0, y: -20 }}

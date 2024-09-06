@@ -148,7 +148,7 @@ const ExpandableCard: React.FC<ExpandableCardProps> = ({ title, content }) => {
 const NuestraHistoria = () => {
     return (
         <section className={'h-auto flex items-start bg-gradient-to-br from-blue-50 to-white dark:from-gray-800 dark:to-gray-900 pt-10 pb-5 mt-2'}>
-            <div className={'container mx-auto px-4'}>
+            <div className={'max-w-full container mx-auto lg:px-28'}>
                 <motion.h1
                     className={'text-4xl font-bold text-center mb-8 text-blue-900 dark:text-blue-300'}
                     initial={{ opacity: 0, y: -20 }}
@@ -176,9 +176,9 @@ const NuestraHistoria = () => {
                             <ElegantContentSection />
                         </motion.div>
                     </div>
-                    <div className={'w-full md:w-1/2 mt-10'}>
+                    <div className={'w-full md:w-1/2 lg:mt-10 md:mt-16'}>
                         <motion.div
-                            className={'sticky top-4 aspect-video md:aspect-auto md:h-[calc(40vh-2rem)]'}
+                            className={'sticky top-4 aspect-video md:aspect-auto md:h-[calc(28vh-2rem)] lg:h-[calc(40vh-2rem)]'}
                             initial={{ opacity: 0, scale: 0.9 }}
                             animate={{ opacity: 1, scale: 1 }}
                             transition={{ delay: 0.4, duration: 0.5 }}

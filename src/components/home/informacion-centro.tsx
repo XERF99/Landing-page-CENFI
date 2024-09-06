@@ -175,8 +175,8 @@ export default function InformacionCentro() {
   const [hoveredIndex, setHoveredIndex] = useState<number | null>(null)
 
   return (
-    <section className="py-16 bg-gradient-to-br from-blue-50 to-indigo-100 dark:from-gray-800 dark:to-gray-900">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <section className="py-16 md:py-5 bg-gradient-to-br from-blue-50 to-indigo-100 dark:from-gray-800 dark:to-gray-900">
+      <div className="max-w-full mx-auto px-4 sm:px-6 lg:px-28">
         <motion.h2
           className="text-3xl font-bold text-center mb-12 text-indigo-800 dark:text-blue-300"
           initial={{ opacity: 0, y: -20 }}

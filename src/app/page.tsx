@@ -31,11 +31,10 @@ import InformacionPrueba from '../components/home/informacion-prueba'
 import BeneficiosEstudiantes from '../components/home/beneficios-estudiantes'
 import NuestrosCursos from '../components/home/nuestros-cursos'
 import Footer from "./footer"
-import { ThemeProvider } from 'next-themes'
+
 
 export default function LandingPage() {
   return (
-    <ThemeProvider attribute="class">
       <div className={'min-h-screen bg-gradient-to-br from-blue-50 to-indigo-100 dark:from-gray-800 dark:to-gray-900 flex flex-col'}>
         <Navbar />
         <main className={'flex-grow w-full'}>
@@ -48,7 +47,5 @@ export default function LandingPage() {
         </main>
         <Footer />
       </div>
-    </ThemeProvider>
-
   )
 }

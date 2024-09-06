@@ -141,7 +141,7 @@ const NuestrasInstalaciones = () => {
 
     return (
         <section className={'bg-gradient-to-b from-blue-50 to-white dark:from-gray-900 dark:to-gray-800 py-16'}>
-            <div className={'container mx-auto px-4'}>
+            <div className={'max-w-full container mx-auto lg:px-28'}>
                 <motion.h2
                     className={'text-4xl font-bold text-blue-800 mb-8 text-right dark:text-blue-300'}
                     initial={{ opacity: 0, y: -20 }}

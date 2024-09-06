@@ -103,7 +103,7 @@ export default function ProcesoAdmision() {
 
   return (
     <section className={'py-16 bg-gradient-to-b from-blue-50 to-white dark:from-gray-800 dark:to-gray-900'}>
-      <div className={'max-w-7xl mx-auto px-4 sm:px-6 lg:px-8'}>
+      <div className={'max-w-full mx-auto px-4 sm:px-6 lg:px-28'}>
         <motion.h2
           className={'text-3xl font-bold text-center mb-12 text-blue-800 dark:text-blue-300'}
           initial={{ opacity: 0, y: -20 }}
@@ -113,7 +113,7 @@ export default function ProcesoAdmision() {
           Proceso de Admisión
         </motion.h2>
         <div className={'relative'}>
-          <div className={'relative flex justify-between items-center mb-12'}>
+          <div className={'relative flex justify-between items-center lg:mb-12 md:mx-10'}>
             {admissionSteps.map((step, index) => (
               <motion.div
                 key={index}
@@ -129,7 +129,7 @@ export default function ProcesoAdmision() {
                 } border-2 border-blue-500 dark:border-gray-500`}>
                   {<step.icon className={'w-6 h-6'} />}
                 </div>
-                <span className={'mt-2 text-xs font-medium text-blue-800 dark:text-gray-300 hidden sm:block'}>{step.title}</span>
+                <span className={'mt-2 text-xs font-medium text-blue-800 dark:text-gray-300 hidden lg:block'}>{step.title}</span>
               </motion.div>
             ))}
           </div>
